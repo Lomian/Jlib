@@ -1,7 +1,6 @@
 use pyo3::prelude::*;
 
 
-
 #[pyfunction]
 
 fn define(a: Vec<i32>) {
