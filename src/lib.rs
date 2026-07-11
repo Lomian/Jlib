@@ -1,3 +1,5 @@
+use pyo3::prelude::*;
+
 
 #[pyfunction]
 
@@ -47,6 +49,6 @@ fn main() {
 
 #[pymodule]
 fn jlib(m: &Bound<'_, PyModule>) -> PyResult<()> {
-    m.add_function(wrap_pyfunction!(define, m)?)?;
+    m.add_function(wrap_pyfunction!(vec, m)?)?;
     Ok(())
 }
