@@ -3,9 +3,9 @@ use pyo3::prelude::*;
 
 #[pyfunction]
 
-fn vec(a: Vec<i32>) {
+fn vec(a: Vec<i32>) -> Vec<i32> {
 
-    return;
+    a
 
 }
 
@@ -41,8 +41,8 @@ fn vec(a: Vec<i32>) {
 
 fn main() {
 
-    let bor = add(vec![1, 2, 3], vec![1, 2, 3]);
-    println!("{:?}", bor)
+
+
 
 
 }
