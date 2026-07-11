@@ -1,4 +1,9 @@
-fn add(a: &[i32], b: &[i32]) -> Vec<i32>  {
+use pyo3::prelude::*;
+
+
+
+#[pyfunction]
+fn add(a: Vec<i32>, b: Vec<i32>) -> Vec<i32>  {
     
   a.iter()
         .zip(b.iter())
@@ -11,10 +16,18 @@ fn add(a: &[i32], b: &[i32]) -> Vec<i32>  {
 
 
 
+
+
 fn main() {
 
-    let bor = add(&[1, 2, 3], &[1, 2, 3]);
+    let bor = add(vec![1, 2, 3], vec![1, 2, 3]);
     println!("{:?}", bor)
     
     
+}
+
+
+fn untitled(m: &Bound<'_, PyModule>) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(add, m)?)?;
+    Ok(())
 }
