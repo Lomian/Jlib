@@ -3,15 +3,30 @@ use pyo3::prelude::*;
 
 
 #[pyfunction]
-fn add(a: Vec<i32>, b: Vec<i32>) -> Vec<i32>  {
-    
-  a.iter()
-        .zip(b.iter())
-        .map(|(x, y)| x + y)
-        .collect()
-    
-    
+
+fn define(a: Vec<i32>) {
+    fn add(a: Vec<i32>, b: Vec<i32>) -> Vec<i32>  {
+
+        a.iter()
+            .zip(b.iter())
+            .map(|(x, y)| x + y)
+            .collect()
+
+
+    }
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 
