@@ -41,8 +41,8 @@ fn main() {
     
 }
 
-
-fn untitled(m: &Bound<'_, PyModule>) -> PyResult<()> {
-    m.add_function(wrap_pyfunction!(add, m)?)?;
+#[pymodule]
+fn jlib(m: &Bound<'_, PyModule>) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(vec, m)?)?;
     Ok(())
 }
