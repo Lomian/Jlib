@@ -6,7 +6,7 @@ edition = "2024"
 # 1. This block is MANDATORY. It tells Rust to compile a C-compatible
 # shared library (.so, .dll, or .dylib) instead of a standard Rust binary.
 [lib]
-name = "untitled"
+name = "jlib"
 crate-type = ["cdylib"]
 
 [dependencies]
