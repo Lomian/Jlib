@@ -6,32 +6,17 @@ use pyo3::prelude::*;
 fn vec(a: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
 
 
-    println!("{:?}", a);
+  //  println!("{:?}", a);
     a
 
 }
 
 
+fn add(a: Vec<Vec<i32>>, b: Vec<Vec<i32>>) {
 
 
 
-
-
-
-
-
-
-
-//   fn add(a: Vec<i32>, b: Vec<i32>) -> Vec<i32>  {
-
-//     a.iter()
-//       .zip(b.iter())
-//     .map(|(x, y)| x + y)
-//     .collect()
-
-
-//  }
-
+}
 
 
 
