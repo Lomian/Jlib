@@ -3,8 +3,10 @@ use pyo3::prelude::*;
 
 #[pyfunction]
 
-fn vec(a: Vec<i32>) -> Vec<i32> {
+fn vec(a: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
 
+
+    println!("{:?}", a);
     a
 
 }
@@ -40,7 +42,7 @@ fn vec(a: Vec<i32>) -> Vec<i32> {
 
 
 fn main() {
-
+    vec(vec![vec![12, 12, 22]]);
 
 
 
