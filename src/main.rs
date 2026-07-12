@@ -1,11 +1,3 @@
-use pyo3::prelude::*;
-
-
-
-
-
-
-
 
 
 
@@ -17,7 +9,7 @@ use pyo3::prelude::*;
 fn main() {
 
 
-
+println!("main file!");
 
 }
 
