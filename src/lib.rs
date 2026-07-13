@@ -6,15 +6,17 @@ use pyo3::prelude::*;
 fn vec(a: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
 
 
-  //  println!("{:?}", a);
+    //  println!("{:?}", a);
     a
 
 }
 
 
-fn add(a: Vec<Vec<i32>>, b: Vec<Vec<i32>>) {
+fn shape(a: Vec<Vec<i32>>) {
 
-
+    for listsi in a {
+        println!("{:?}", listsi)
+    }
 
 }
 
@@ -27,9 +29,9 @@ fn add(a: Vec<Vec<i32>>, b: Vec<Vec<i32>>) {
 
 
 fn main() {
-    vec(vec![vec![12, 12, 22]]);
+    let emmen = vec(vec![vec![12, 12, 22], vec![1, 2, 3]]);
 
-
+    shape(emmen)
 
 
 }
