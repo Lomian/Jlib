@@ -13,11 +13,16 @@ fn vec(a: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
 
 
 fn shape(a: Vec<Vec<i32>>) {
-
+    let mut count = 0;
     for listsi in a {
-        println!("{:?}", listsi)
-    }
 
+        count += 1;
+
+        println!("{:?}", listsi);
+
+
+    }
+    println!("{:?}", count);
 }
 
 
