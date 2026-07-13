@@ -14,6 +14,7 @@ fn vec(a: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
 
 fn shape(a: Vec<Vec<i32>>) {
     let mut count = 0;
+    let amount = a[0].len();
     for listsi in a {
 
         count += 1;
@@ -22,7 +23,7 @@ fn shape(a: Vec<Vec<i32>>) {
 
 
     }
-    println!("{:?}", count);
+    println!("({}, {}", count, amount);
 }
 
 
