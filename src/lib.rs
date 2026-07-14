@@ -19,11 +19,11 @@ fn shape(a: Vec<Vec<i32>>) {
 
         count += 1;
 
-        println!("{:?}", listsi);
+        //println!("{:?}", listsi);
 
 
     }
-    println!("({}, {}", count, amount);
+    println!("({}, {})", count, amount);
 }
 
 
